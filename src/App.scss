@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  font-family: Oswald;
+}
+
+body {
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-Background {
+  background-color: rgba(24, 24, 24, 1);
+  position: fixed;
+  z-index: -4;
+  height: 100%;
+  width: 100%;
+}
+
+.App-Main {
+  color: white;
+  overflow: auto;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
