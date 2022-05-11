@@ -3,5 +3,49 @@
 .Projects {
   @include Section;
   width: 100%;
-  height: 50rem;
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Nav {
+      margin: 30px 0;
+      width: 900px;
+      display: flex;
+      justify-content: space-evenly;
+
+      .Btn {
+        font-size: 1.6rem;
+      }
+    }
+
+    .Websites {
+      margin: 0 0 50px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 600px;
+      width: 1200px;
+
+      .Website {
+        width: 340px;
+        height: 240px;
+        margin: 30px;
+
+        .Img {
+          width: 100%;
+          height: 80%;
+          object-fit: cover;
+        }
+
+        .Label {
+          margin: 5px 0 0 0;
+          width: 100%;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
