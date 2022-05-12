@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.scss';
 
-const Header = ({ Ref }) => {
+const Header = ({ Ref, contactRef, linkToRef }) => {
   return (
     <div>
       <div className='Header-Spacing' />
@@ -10,7 +10,9 @@ const Header = ({ Ref }) => {
           <div className='Text'>HI,</div>
           <div className='Text'>I'M CONNOR RACK</div>
           <div className='Text'>WEB DEVELOPER</div>
-          <div className='Btn'>Contact Me!</div>
+          <div className='Btn' onClick={() => linkToRef(contactRef)}>
+            Contact Me!
+          </div>
         </div>
       </div>
     </div>

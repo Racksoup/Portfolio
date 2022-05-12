@@ -9,14 +9,8 @@ const NavBar = ({
   aboutRef,
   blogsRef,
   contactRef,
+  linkToRef,
 }) => {
-  const linkToRef = (ref) => {
-    const linkOffset = 100;
-    const refPosition = ref.current.getBoundingClientRect().top;
-    const offsetPosition = refPosition + window.pageYOffset - linkOffset;
-    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-  };
-
   return (
     <div className='NavBar'>
       <div className='Content'>

@@ -7,6 +7,7 @@ import Testimonials from '../Components/Testimonials/Testimonials.jsx';
 import About from '../Components/About/About.jsx';
 import Blogs from '../Components/Blogs/Blogs.jsx';
 import Contact from '../Components/Contact/Contact.jsx';
+import ContactBtn from '../Components/ContactBtn/ContactBtn.jsx';
 
 const Home = () => {
   const headerRef = useRef(null);
@@ -16,6 +17,13 @@ const Home = () => {
   const aboutRef = useRef(null);
   const blogsRef = useRef(null);
   const contactRef = useRef(null);
+
+  const linkToRef = (ref) => {
+    const linkOffset = 100;
+    const refPosition = ref.current.getBoundingClientRect().top;
+    const offsetPosition = refPosition + window.pageYOffset - linkOffset;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+  };
 
   return (
     <div>
@@ -27,8 +35,10 @@ const Home = () => {
         aboutRef={aboutRef}
         blogsRef={blogsRef}
         contactRef={contactRef}
+        linkToRef={linkToRef}
       />
-      <Header Ref={headerRef} />
+      <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
+      <Header Ref={headerRef} contactRef={contactRef} linkToRef={linkToRef} />
       <Services Ref={servicesRef} />
       <Projects Ref={projectsRef} />
       <Testimonials Ref={testimonialsRef} />
