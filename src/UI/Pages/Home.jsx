@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import NavBar from '../Components/NavBar/NavBar.jsx';
 import Header from '../Components/Header/Header.jsx';
 import Services from '../Components/Services/Services.jsx';
@@ -10,6 +10,19 @@ import Contact from '../Components/Contact/Contact.jsx';
 import ContactBtn from '../Components/ContactBtn/ContactBtn.jsx';
 
 const Home = () => {
+  const [scrollPos, setScrollPos] = useState(0);
+  const handleScroll = () => {
+    const pos = window.pageYOffset;
+    setScrollPos(pos);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const headerRef = useRef(null);
   const servicesRef = useRef(null);
   const projectsRef = useRef(null);
@@ -37,7 +50,9 @@ const Home = () => {
         contactRef={contactRef}
         linkToRef={linkToRef}
       />
-      <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
+      {scrollPos > 500 && scrollPos < 4000 && (
+        <ContactBtn contactRef={contactRef} linkToRef={linkToRef} />
+      )}
       <Header Ref={headerRef} contactRef={contactRef} linkToRef={linkToRef} />
       <Services Ref={servicesRef} />
       <Projects Ref={projectsRef} />

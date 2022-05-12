@@ -11,7 +11,7 @@ const Header = ({ Ref, contactRef, linkToRef }) => {
           <div className='Text'>I'M CONNOR RACK</div>
           <div className='Text'>WEB DEVELOPER</div>
           <div className='Btn' onClick={() => linkToRef(contactRef)}>
-            Contact Me!
+            CONTACT ME!
           </div>
         </div>
       </div>

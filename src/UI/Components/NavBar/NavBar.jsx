@@ -15,7 +15,7 @@ const NavBar = ({
     <div className='NavBar'>
       <div className='Content'>
         <div />
-        <div className='Name'>Connor Rack</div>
+        <div className='Name'>CONNOR RACK</div>
         <div />
         <div className='Links'>
           <div className='RefLink' onClick={() => linkToRef(headerRef)}>
