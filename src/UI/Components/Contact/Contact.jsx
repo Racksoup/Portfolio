@@ -56,6 +56,16 @@ const Contact = ({ Ref }) => {
           />
           <div className='Btn'>SEND MESSAGE</div>
         </div>
+        <div className='Details'>
+          <div className='Title'>NEED TO KNOW MORE DETAILS? GET IN TOUCH</div>
+          <div className='Text'>
+            fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd
+            s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs
+            fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf
+            dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f
+          </div>
+          <div className='Btn'>GET STARTED</div>
+        </div>
       </div>
     </div>
   );
