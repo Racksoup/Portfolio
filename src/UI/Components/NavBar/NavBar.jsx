@@ -11,7 +11,10 @@ const NavBar = ({
   contactRef,
 }) => {
   const linkToRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    const linkOffset = 100;
+    const refPosition = ref.current.getBoundingClientRect().top;
+    const offsetPosition = refPosition + window.pageYOffset - linkOffset;
+    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
   };
 
   return (
