@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './contact.scss';
 
+import { send } from 'emailjs-com';
+
 const Contact = ({ Ref }) => {
   const [form, setForm] = useState({
     name: '',
@@ -9,6 +11,17 @@ const Contact = ({ Ref }) => {
     message: '',
   });
   const { name, subject, email, message } = form;
+
+  const submit = () => {
+    send('service_oyteiuz', 'template_srze9zo', form, 'user_mAV5lf9i0he1cOe6oPCgj').then(
+      (result) => {
+        console.log('Success', result.status, result.text);
+      },
+      (error) => {
+        console.log('Failed', error);
+      }
+    );
+  };
 
   const onChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -54,7 +67,9 @@ const Contact = ({ Ref }) => {
             onChange={(e) => onChange(e)}
             autoComplete='off'
           />
-          <div className='Btn'>SEND MESSAGE</div>
+          <div className='Btn' onClick={() => submit()}>
+            SEND MESSAGE
+          </div>
         </div>
         <div className='Details'>
           <div className='Title'>NEED TO KNOW MORE DETAILS? GET IN TOUCH</div>
