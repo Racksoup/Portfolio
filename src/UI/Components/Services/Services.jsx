@@ -13,10 +13,10 @@ const Services = ({ Ref }) => {
         <div className='Box-Red'>
           <div className='BoxTitle'>BASIC</div>
           <div className='BoxPrice'>STARTING PRICE: $200</div>
-          <div className='BoxBenifits'>Benefitis: Business Website, 3 Pages</div>
+          <div className='BoxBenifits'>Benefitis: Business Website, 3 Pages, Mobile</div>
           <div className='BoxText'>
             Basic Website. Static content. This is very good for those who need a business /
-            personal website.{' '}
+            personal website. Mobile and Desktop.
           </div>
         </div>
         <div className='Box-Blue'>

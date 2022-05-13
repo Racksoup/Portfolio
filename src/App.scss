@@ -2,10 +2,22 @@ html {
   height: 100%;
   font-family: Oswald;
   font-weight: 400;
+  overflow-y: overlay;
 }
 
 body {
   min-height: 100%;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5rem;
+
+  &-thumb {
+    background: cyan;
+    border-radius: 0.4rem;
+    height: 20px;
+  }
 }
 
 * {
