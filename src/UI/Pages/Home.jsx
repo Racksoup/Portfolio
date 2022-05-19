@@ -3,7 +3,7 @@ import NavBar from '../Components/NavBar/NavBar.jsx';
 import Header from '../Components/Header/Header.jsx';
 import Services from '../Components/Services/Services.jsx';
 import Projects from '../Components/Projects/Projects.jsx';
-import Testimonials from '../Components/Testimonials/Testimonials.jsx';
+//import Testimonials from '../Components/Testimonials/Testimonials.jsx';
 import About from '../Components/About/About.jsx';
 import Blogs from '../Components/Blogs/Blogs.jsx';
 import Contact from '../Components/Contact/Contact.jsx';
