@@ -56,7 +56,7 @@ const Home = () => {
       <Header Ref={headerRef} contactRef={contactRef} linkToRef={linkToRef} />
       <Services Ref={servicesRef} />
       <Projects Ref={projectsRef} />
-      <Testimonials Ref={testimonialsRef} />
+      {/* <Testimonials Ref={testimonialsRef} /> */}
       <About Ref={aboutRef} />
       <Blogs Ref={blogsRef} />
       <Contact Ref={contactRef} />

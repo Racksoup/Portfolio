@@ -11,6 +11,7 @@ const Contact = ({ Ref }) => {
     message: '',
   });
   const { name, subject, email, message } = form;
+  const [showContacts, toggleShowContacts] = useState(false);
 
   const submit = () => {
     send('service_oyteiuz', 'template_srze9zo', form, 'user_mAV5lf9i0he1cOe6oPCgj').then(
@@ -74,12 +75,19 @@ const Contact = ({ Ref }) => {
         <div className='Details'>
           <div className='Title'>NEED TO KNOW MORE DETAILS? GET IN TOUCH</div>
           <div className='Text'>
-            fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd
-            s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs
-            fdsfdsfs fdsfdsf dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf
-            dsfs fs f fdsfds fdsf ds f sfd s fds dfsfds fds fs fdsfdsfs fdsfdsf dsfs fs f
+            Not sure what kind of website you need? Send me and email or give me a call to discuss
+            what kind of plan/package you will need. I will personally make sure that your website
+            is customized perfectly for your business.
           </div>
-          <div className='Btn'>GET STARTED</div>
+          <div className='Btn' onClick={() => toggleShowContacts(!showContacts)}>
+            GET STARTED
+          </div>
+          {showContacts && (
+            <div className='Contacts'>
+              <div className='Email'>TranquilGorge@Outlook.com</div>
+              <div className='Phone'>1-613-869-2343</div>
+            </div>
+          )}
         </div>
       </div>
     </div>

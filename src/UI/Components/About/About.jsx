@@ -10,14 +10,10 @@ const About = ({ Ref }) => {
       <div className='Contents'>
         <img className='Img' src={HeaderBG} />
         <div className='Text'>
-          FDSFD fdsfds fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds fdsfds
-          fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd fdsfdf ere wr d
-          sfd sfds fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD
-          fdsfds fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd
-          fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds
-          fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds
-          fdsfds fdsafdsafd fdsfdf ere wr d sfd sfds fsdf dsfFDSFD fdsfds fdsfds fdsafdsafd fdsfdf
-          ere wr d sfd sfds fsdf dsf
+          My name is Connor Rack. I'm passionate about website development. My goal is to build
+          excellent professional websites that help my clients provide a better service for their
+          customers. In my free time I like to play and develop video-games. Otherwise, I'm usually
+          spending time with my dog or my family.
         </div>
       </div>
     </div>

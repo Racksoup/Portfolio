@@ -122,6 +122,19 @@
         justify-content: center;
         text-align: center;
       }
+
+      .Contacts {
+        align-self: start;
+        margin: 0.8rem 0 0 -5rem;
+        padding: 0.4rem;
+        border: 2px solid cyan;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+      }
     }
   }
 }
