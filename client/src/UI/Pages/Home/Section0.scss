@@ -27,19 +27,43 @@
       h2 {
         font-size: 2.2rem;
         text-shadow: black 0 0 1rem;
-        width: 15rem;
+        width: 17rem;
         color: white;
       }
 
       h1 {
         font-size: 2.5rem;
         text-shadow: black 0 0 1rem;
-        width: 15rem;
+        width: 17rem;
         color: white;
       }
 
-      .Spaceholder {
-        width: 15rem;
+      .LinkBox {
+        width: 17rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Line {
+          width: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          p {
+            color: white;
+            font-size: 0.8rem;
+            margin: 0 0.2rem 0 0;
+          }
+
+          a {
+            color: lightblue;
+            text-decoration: underline;
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }

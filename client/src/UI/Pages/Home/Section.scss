@@ -1,0 +1,29 @@
+@import '../../../App.scss';
+
+.Section {
+  width: 90rem;
+  padding: 6rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: white;
+    font-size: 2.2rem;
+    text-shadow: black 0 0 1rem;
+    text-decoration: underline;
+    margin: 0 0 1rem 0;
+  }
+
+  .Content {
+    width: 100%;
+    padding: 2.2rem 0rem;
+    border-top: solid 0.1rem $primary3;
+    border-bottom: solid 0.1rem $primary3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
