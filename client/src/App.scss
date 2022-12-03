@@ -1,17 +1,23 @@
 @import './UI/Styles/Btn.scss';
 $upperBreak: 1150px;
 $lowerBreak: 767px;
-$bgColor: rgba(18, 18, 18, 1);
-$color-1: rgb(185, 126, 67);
-$color-2: rgb(77, 52, 35);
-$color-3: rgb(166, 123, 91);
-$color-4: rgb(107, 76, 55);
-$color-5: rgb(211, 163, 116);
-$color-1-tran: rgba(185, 126, 67, 0.8);
-$color-2-tran: rgba(77, 52, 35, 0.8);
-$color-3-tran: rgba(166, 123, 91, 0.8);
-$color-4-tran: rgb(107, 76, 55, 0.8);
-$color-5-tran: rgba(211, 163, 116, 0.8);
+$primary0: #ffcccc;
+$primary1: #ff5353;
+$primary2: #ff0606;
+$primary3: #ff0000;
+$primary4: #290000;
+$secondary0: #ffeacc;
+$secondary1: #ffba53;
+$secondary2: #ff9b06;
+$secondary3: #ff9900;
+$secondary4: #2e1c00;
+$tertiary0: #f7cbfd;
+$tertiary1: #e554f9;
+$tertiary2: #d60af2;
+$tertiary3: #9801ae;
+$tertiary4: #1d0020;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
 
 html {
   width: 100%;
@@ -29,14 +35,14 @@ body {
   width: 0.5rem;
 
   &-thumb {
-    background: $color-3;
+    background: $primary0;
     border-radius: 0.4rem;
     height: 20px;
   }
 }
 
 * {
-  font-family: Oswald;
+  font-family: 'Roboto', sans-serif;
   cursor: default;
   margin: 0;
   padding: 0;
@@ -67,7 +73,7 @@ a {
   }
 
   &-Background {
-    background-color: $bgColor;
+    background-color: rgba(0, 0, 0, 1);
     position: fixed;
     z-index: -4;
     height: 100%;

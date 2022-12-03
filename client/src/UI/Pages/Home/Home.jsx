@@ -1,12 +1,12 @@
 import React from 'react';
-import './Home.scss';
-
-import { useDispatch, useSelector } from 'react-redux';
+import Section0 from './Section0.jsx';
 
 const Home = () => {
-  const dispatch = useDispatch();
-
-  return <div className='Home'></div>;
+  return (
+    <div style={{ width: '100vw' }}>
+      <Section0 />
+    </div>
+  );
 };
 
 export default Home;
