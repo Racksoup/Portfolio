@@ -8,13 +8,13 @@ const data = [
   {
     title: 'Dev Blog',
     website: 'www.ballz.ca',
-    github: 'https://github.com/Racksoup/DevBlog',
+    github: 'https://dev-blog-jib0.onrender.com/',
     description: "Where I write about cool things in tech and things I've learned along my journey",
     image: DevBlog,
   },
   {
     title: 'History Blog',
-    website: 'www.ballz.ca',
+    website: 'https://history-blog.onrender.com/',
     github: 'https://github.com/Racksoup/HistoryBlog',
     description: 'Articles about geo-political history and technology over the last 300 years',
     image: HistoryBlog,
