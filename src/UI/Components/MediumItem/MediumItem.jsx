@@ -10,10 +10,18 @@ const MediumItem = (data) => {
 
   return (
     <div className='MediumItem'>
-      <h4>{title}</h4>
-      <img src={image} alt='website-image' />
-      <p className='Address'>{website}</p>
-      <p className='Github'>{github}</p>
+      <a href={website} target='_blank'>
+        <h4>{title}</h4>
+      </a>
+      <a href={website} target='_blank'>
+        <img src={image} alt='website-image' />
+      </a>
+      <a href={website} target='_blank'>
+        <p className='Address'>{website}</p>
+      </a>
+      <a href={github} target='_blank'>
+        <p className='Github'>{github}</p>
+      </a>
       <p className='Description'>{description}</p>
     </div>
   );

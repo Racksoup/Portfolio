@@ -1,15 +1,15 @@
 @import '../../../App.scss';
 
 .Section {
-  width: 90rem;
-  padding: 6rem 0;
+  width: 92rem;
+  padding: 9rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
-    color: white;
+    color: $primary0;
     font-size: 2.2rem;
     text-shadow: black 0 0 1rem;
     text-decoration: underline;
@@ -18,7 +18,7 @@
 
   .Content {
     width: 100%;
-    padding: 2.2rem 0rem;
+    padding: 1rem 0rem;
     border-top: solid 0.1rem $primary3;
     border-bottom: solid 0.1rem $primary3;
     display: flex;
