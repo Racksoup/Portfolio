@@ -7,8 +7,8 @@ import HistoryBlog from '../../../images/HistoryBlog.png';
 const data = [
   {
     title: 'Dev Blog',
-    website: 'www.ballz.ca',
-    github: 'https://dev-blog-jib0.onrender.com/',
+    website: 'https://dev-blog-jib0.onrender.com/',
+    github: 'https://github.com/Racksoup/DevBlog',
     description: "Where I write about cool things in tech and things I've learned along my journey",
     image: DevBlog,
   },
