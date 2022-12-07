@@ -1,31 +1,24 @@
 import React from 'react';
 import './Section.scss';
 import MediumItem from '../../Components/MediumItem/MediumItem';
+import GameRoom from '../../../images/GameRoom.png';
+import XPChart from '../../../images/XPChart.png';
 
 const data = [
   {
-    title: 'zzz',
-    website: 'www.ballz.ca',
-    github: 'githubxx',
-    description: 'This is where my description goes it goes right here in this place',
+    title: 'Game Room',
+    website: 'https://www.curseforge.com/wow/addons/game-room',
+    github: 'https://github.com/Racksoup/ZUI_GameRoom',
+    description:
+      'Game Suite App for World of Warcraft! Features retro games like Battleships, Asteroids, Snake and more!',
+    image: GameRoom,
   },
   {
-    title: 'zzz',
-    website: 'www.ballz.ca',
-    github: 'githubxx',
+    title: 'XP Chart',
+    website: 'https://www.curseforge.com/wow/addons/xp-chart',
+    github: 'https://github.com/Racksoup/ZUI_XPChart',
     description: 'This is where my description goes it goes right here in this place',
-  },
-  {
-    title: 'zzz',
-    website: 'www.ballz.ca',
-    github: 'githubxx',
-    description: 'This is where my description goes it goes right here in this place',
-  },
-  {
-    title: 'zzz',
-    website: 'www.ballz.ca',
-    github: 'githubxx',
-    description: 'This is where my description goes it goes right here in this place',
+    image: XPChart,
   },
 ];
 

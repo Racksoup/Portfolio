@@ -1,19 +1,23 @@
 import React from 'react';
 import './Section.scss';
 import MediumItem from '../../Components/MediumItem/MediumItem';
+import DevBlog from '../../../images/DevBlog.png';
+import HistoryBlog from '../../../images/HistoryBlog.png';
 
 const data = [
   {
-    title: 'zzz',
+    title: 'Dev Blog',
     website: 'www.ballz.ca',
-    github: 'githubxx',
-    description: 'This is where my description goes it goes right here in this place',
+    github: 'https://github.com/Racksoup/DevBlog',
+    description: "Where I write about cool things in tech and things I've learned along my journey",
+    image: DevBlog,
   },
   {
-    title: 'zzz',
+    title: 'History Blog',
     website: 'www.ballz.ca',
-    github: 'githubxx',
-    description: 'This is where my description goes it goes right here in this place',
+    github: 'https://github.com/Racksoup/HistoryBlog',
+    description: 'Articles about geo-political history and technology over the last 300 years',
+    image: HistoryBlog,
   },
 ];
 
