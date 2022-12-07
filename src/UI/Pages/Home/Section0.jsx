@@ -10,16 +10,22 @@ const Section0 = () => {
           <h1>Portfolio</h1>
           <div className='LinkBox'>
             <div className='Line'>
-              <p>Professional Website -</p> <a href='#'>www.website.com</a>
+              <p>Professional Website -</p>{' '}
+              <a href='https://website-design.onrender.com/' target='_blank'>
+                https://website-design.onrender.com/
+              </a>
             </div>
             <div className='Line'>
-              <p>Github -</p> <a href='#'>www.github/racksoup.com</a>
+              <p>Github -</p>{' '}
+              <a href='https://github.com/Racksoup' target='_blank'>
+                https://github.com/Racksoup
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <img src='' alt='' />
+      <img src='' alt='Home' />
 
       <div className='Bottom'>
         <div className='Arrow'>
