@@ -1,5 +1,6 @@
 import React from 'react';
 import './Section0.scss';
+import HeaderBG from '../../../images/HeaderBG.png';
 
 const Section0 = () => {
   return (
@@ -25,7 +26,7 @@ const Section0 = () => {
         </div>
       </div>
 
-      <img src='' alt='Home' />
+      <img src={HeaderBG} alt='Home' />
 
       <div className='Bottom'>
         <div className='Arrow'>
